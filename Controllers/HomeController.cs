@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace db103215_MIS4200v2.Controllers
+namespace db103215_mis4200.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,14 +15,14 @@ namespace db103215_MIS4200v2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "My name is Dylan Bryan.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Dylan Bryan.";
 
             return View();
         }
