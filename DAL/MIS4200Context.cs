@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using db103215_MIS4200v2.Models; // This is needed to access the models
-using System.Data.Entity; // this is needed to access the DbContext object
+using db103215_MIS4200v2.Models;
+using System.Data.Entity; 
 
 namespace db103215_MIS4200v2.DAL
 {
     public class MIS4200Context : DbContext
     {
-        public MIS4200Context() : base("name=DefaultConnection") 
+        public MIS4200Context() : base("DefaultConnection")
         {
             // this method is a 'constructor' and is called when a new context is created
             // the base attribute says which connection string to use
@@ -21,4 +21,8 @@ namespace db103215_MIS4200v2.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<CourseDetail> CourseDetails { get; set; }
     }
+
+
+
+
 }
