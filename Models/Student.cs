@@ -15,6 +15,8 @@ namespace db103215_MIS4200v2.Models
         public string email { get; set; }
         public string phone { get; set; }
 
+       
+
         public ICollection<Course> Course { get; set; }
     }
 

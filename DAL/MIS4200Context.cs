@@ -11,6 +11,9 @@ namespace db103215_MIS4200v2.DAL
     {
         public MIS4200Context() : base("DefaultConnection")
         {
+            // add the SetInitializer statement here
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,
+           db103215_MIS4200v2.Migrations.MISContext.Configuration>("DefaultConnection"));
             // this method is a 'constructor' and is called when a new context is created
             // the base attribute says which connection string to use
         }
@@ -21,6 +24,7 @@ namespace db103215_MIS4200v2.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<CourseDetail> CourseDetails { get; set; }
     }
+
 
 
 
